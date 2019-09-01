@@ -3,7 +3,7 @@
 # KursJS - DOM
 
 ## Zadanie 1
-Napisz konstruktor "HTMLInfo" który będzie miał 2 początkowe właściwości:
+Napisz konstruktor/klasę "HTMLInfo" który będzie miał 2 początkowe właściwości:
 * **selector** - string podawany przy tworzeniu instancji. Oznacza selektor użyty do pobrania elementów np. `.btn`
 * **elements** - pseudo tablica elementów pobranych ze strony przy wykorzystaniu powyższego selektora np. `document.querySelectorAll(this.selector)`
 

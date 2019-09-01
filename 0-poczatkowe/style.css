@@ -1,33 +1,75 @@
-* {
+body {
+    background-attachment: fixed;
+    margin:0;
+}
+
+input {
+    padding: 20px;
+    display: block;
+    width: 100%;
     box-sizing: border-box;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+    border: 1px solid #ccc;
+    font-size: 1.1rem;
+    font-family: serif;
 }
-.list {
-    display:flex;
-    border:2px solid #aaa;
-    padding:20px;
+input::placeholder {
+    color: #aaa;
+    font-style: italic;
 }
-.list .element {
-    height:200px;
-    flex-grow: 1;
-    margin:10px;
-    display: flex;
-    background-image: linear-gradient( 135deg, #2AFADF 10%, #4C83FF 100%);
-    border-radius: 10px;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
+
+.post {
+    background: #fff;
+    padding: 60px;
+    width: 900px;
+    box-sizing: border-box;
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    font-family: serif;
+    font-size: 1.2rem;
+    line-height:1.5;
+    color: #6e7d8d;
+}
+.post-title {
+    color: #333;
+    font-size: 3.2rem;
     font-family: sans-serif;
-    text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: bold;
+    margin-top: 0;
 }
-.delete {
-    display: inline-block;
-    padding:15px 30px;
-    background: red;
-    color:#fff;
-    border:0;
-    margin:10px 0;
+
+.post-content {}
+.post-content a {
+    color: orangered;
+}
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+}
+.img-left {
+    float:left;
+    margin: 0 30px 20px 0;
+}
+.img-right {
+    float:right;
+    margin: 0 0 20px 30px;
+}
+
+@media (max-width: 900px) {
+    .post-content img {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 700px) {
+    .post {
+        font-size: 1.2rem;
+        padding: 30px;
+    }
+    .post-title {
+        font-size: 2rem;
+    }
 }
