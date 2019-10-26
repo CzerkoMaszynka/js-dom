@@ -9,6 +9,7 @@ body {
     background: #F9FAFC;
     max-width:1600px;
     margin:0 auto;
+    overflow-y: scroll;
 }
 .car-list {
     display: flex;
